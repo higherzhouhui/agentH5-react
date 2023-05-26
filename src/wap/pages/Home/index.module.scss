@@ -1,0 +1,109 @@
+.homeRoot {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    background: #ECEFF7;
+    .title {
+        color: #fff;
+        background: linear-gradient(139deg, #FF92AD 0%, #FF5E86 100%);
+        height: 150px;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        .content {
+            padding: 12px;
+        }
+    }
+    .main {
+        padding: 0 12px;
+        margin-top: -94px;
+        .tongji {
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 12px;
+            .time {
+                position: relative;
+                opacity: 0.6;
+                padding-right: 20px;
+                font-size: 0.78rem;
+                .desc {
+                    margin-right: 4px;
+                }
+                .hint {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            .yongjin {
+                display: flex;
+                .item {
+                    flex: 1;
+                    text-align: center;
+                    .number {
+                        font-size: 1.23rem;
+                        color: #000;
+                        margin: 20px 0 12px 0;
+                        font-family: DinNumber;
+                        font-weight: bold;
+                    }
+                    .desc {
+                        font-size: 0.84rem;
+                        img {
+                            width: 12px;
+                            height: 12px;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .zhishuWrapper {
+            display: flex;
+            .item {
+                flex: 1;
+                .top {
+                    font-size: 1.23rem;
+                    color: #000;
+                    margin: 18px 0 10px 0;
+                    text-align: center;
+                    font-family: DinNumber;
+                    font-weight: bold;
+                }
+                .bot {
+                    img {
+                        width: 12px;
+                        height: 12px;
+                        margin-right: 4px;
+                    }
+                    font-size: 0.78rem;
+                    color: rgba(0,0,0,0.45);
+                    text-align: center;
+                }
+            }
+        }
+        .teamWrapper {
+            margin: 20px 0 6px 0;
+            .teamTitle {
+                img {
+                    width: 8px;
+                    height: 16px;
+                    margin-right: 4px;
+                }
+                color: #000;
+                font-weight: 500;
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+            .teamContent {
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 8px 0;
+            }
+        }
+        .tabWrapper {
+            padding-bottom: 65px;
+        }
+    }
+}

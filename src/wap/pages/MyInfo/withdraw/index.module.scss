@@ -1,0 +1,235 @@
+.container {
+	position: relative;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 44px 12px 65px 12px;
+	background: #eceff7;
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 44px;
+		color: #000;
+		font-family: ArialBold;
+		font-size: 1rem;
+		background: #fff;
+		.backBtn {
+			position: fixed;
+			width: 20px;
+			height: 20px;
+			left: 12px;
+			top: 12px;
+		}
+	}
+	.main {
+		.form {
+			border-radius: 8px;
+			position: relative;
+		}
+		.inputStyle {
+			height: unset !important;
+			border-bottom: 0 !important;
+			background: #ECEFF7;
+			input {
+				color: #333 !important;
+			}
+		}
+		.caculate {
+			font-size: 0.78rem;
+			line-height: 18px;
+			color: var(--adm-color-primary);
+		}
+		.submitBtn {
+			width: 55%;
+			color: rgba(255,255,255,0.88);
+			height: 36px;
+			background: var(--adm-color-primary);
+			border-radius: 8px;
+			border: none;
+			font-size: 0.9rem;
+			position: absolute;
+			left: 50%;
+			bottom: -80px;
+			transform: translate(-50%, 0);
+		}
+		.balanceWrapper {
+			width: 100%;
+			height: 85px;
+			background: linear-gradient(149deg, #FEA9BF 0%, var(--adm-color-primary) 100%);
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.balance {
+				font-size: 1.23rem;
+				font-family: ArialBold;
+				color: rgba(255,255,255,0.88);
+				line-height: 1.23rem;
+			}
+			.desc {
+				font-size: 0.78rem;
+				font-weight: 400;
+				color: rgba(255,255,255,0.88);
+				line-height: 0.78rem;
+				margin-top: 18px;
+			}
+		}
+	}
+	.content {
+		padding: 12px 8px;
+		background: #FFFFFF;
+		border-radius: 8px;
+		margin-top: 8px;
+		.title {
+			font-size: 0.97rem;
+			font-weight: 400;
+			color: #000000;
+			line-height: 0.97rem;
+			margin-bottom: 8px;
+		}
+		.tabList {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 8px;
+			width: 100%;
+			background: #fff;
+			box-sizing: border-box;
+			.tab {
+				width: 100%;
+				text-align: center;
+				line-height: 36px;
+				border-radius: 4px;
+				background: #ECEFF7;
+				font-size: 0.9rem;
+				color: rgba(0,0,0,0.45);
+				border: 1px solid transparent;
+				position: relative;
+			}
+			.tabActive {
+				color: var(--adm-color-primary);
+				border: 1px solid var(--adm-color-primary);
+				&::after {
+					position: absolute;
+					background-image: url('../../../assets/image/common/checked.png');
+					background-size: 100%;
+					content: '';
+					right: 0;
+					bottom: 0;
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+		.divider {
+			width: 100%;
+			height: 1px;
+			background: rgba(0,0,0,0.05);
+			margin: 15px 0 18px 0;
+		}
+		.divider2 {
+			width: 100%;
+			height: 1px;
+			background: rgba(0,0,0,0.05);
+			margin: 0 0 10px 0;
+		}
+		.empty {
+			width: 100%;
+			height: 76px;
+			background: #ECEFF7;
+			border-radius: 4px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 0.84rem;
+			font-weight: 400;
+			color: rgba(0,0,0,0.25);
+			line-height: 0.84rem;
+			.router {
+				color: var(--adm-color-primary);
+			}
+		}
+	}
+	.listWrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 8px;
+		row-gap: 12px;
+		.list {
+			background: #ECEFF7;
+			border-radius: 4px;
+			padding: 12px 14px 12px 8px;
+			border: 1px solid transparent;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.bankName {
+				font-size: 0.78rem;
+				font-weight: 400;
+				color: rgba(0,0,0,0.45);
+				line-height: 16px;
+				margin-bottom: 21px;
+				word-break: break-all;
+				position: relative;
+				.protocol {
+					background: rgb(237,222,229);
+					border-radius: 9px;
+					font-size: 0.78rem;
+					font-weight: 400;
+					color: #F94242;
+					line-height: 16px;
+					padding: 0 4px;
+					position: absolute;
+					top: -10px;
+					right: -10px;
+				}
+				.walletName {
+					padding-top: 6px;
+					display: block;
+				}
+			}
+			.bankNo {
+				font-size: 0.84rem;
+				font-weight: 400;
+				color: #000000;
+				line-height: 17px;
+				max-width: 100%;
+				word-break: break-all;
+			}
+			.addWrapper {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				.addIcon {
+					width: 20px;
+					height: 20px;
+					margin-bottom: 8px;
+				}
+			}
+		}
+		.listActive {
+			border: 1px solid var(--adm-color-primary);
+			&::after {
+				position: absolute;
+				background-image: url('../../../assets/image/common/checked.png');
+				background-size: 100%;
+				content: '';
+				right: 0;
+				bottom: 0;
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
+}
+.adm-list-item {
+	padding-left: 0;
+}

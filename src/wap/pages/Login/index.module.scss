@@ -1,0 +1,57 @@
+@import '../../assets/style/index.scss';
+@import './public.module.scss';
+
+.checkbox {
+    color: #333;
+}
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+}
+
+.lang {
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #666;
+    background: #fff;
+    border-radius: 2px;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    .langIcon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .downArrow {
+        height: 7px;
+        transition: all 0.5s;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
+    }
+}
+
+.codeWrapper {
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    right: 0;
+    bottom: 0;
+}
+.emailCode {
+    position: absolute;
+    height: 20px;
+    right: 0;
+    bottom: 9px;
+    color: var(--adm-color-primary);
+    font-size: 0.9rem;
+}

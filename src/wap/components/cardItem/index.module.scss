@@ -1,0 +1,51 @@
+.cardItemWrapper {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 12px 8px;
+    margin-bottom: 8px;
+    .top {
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .middle {
+        .name {
+            font-family: ArialBold;
+            font-size: 1.03rem;
+            line-height: 1.03rem;
+            margin: 12px 0;
+            word-break: break-all;
+        }
+        .bankNo {
+            font-size: 1.03rem;
+            line-height: 1.03rem;
+            margin-bottom: 30px;
+            word-break: break-all;
+        }
+    }
+    .bot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .time {
+            font-size: 0.78rem;
+            color: rgba(0,0,0,0.25);
+        }
+        .delete {
+            color: var(--adm-color-primary);
+            font-size: 0.78rem;
+            display: flex;
+            align-items: center;
+            img {
+                width: 11px;
+                height: 12px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+.disableStyle {
+    opacity: 0.6;
+}

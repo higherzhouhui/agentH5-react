@@ -1,0 +1,30 @@
+.tabWrapper .adm-tabs-tab {
+    font-size: 1.1rem!important;
+    font-weight: 400!important;
+    color: rgba(0,0,0,0.45)!important;
+    font-family: Arial;
+}
+.tabWrapper .adm-tabs-tab-active {
+    font-weight: 500!important;
+    color: var(--adm-color-primary)!important;
+    position: relative;
+    font-family: ArialBold;
+}
+.tabWrapper .adm-tabs-tab-active::after {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: var(--adm-color-primary);
+    left: 0;
+    bottom: 0;
+    content: '';
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.tabWrapper .adm-tabs-tab-line {
+    display: none;
+}
+
+.homeRoot .adm-swiper-horizontal .adm-swiper-indicator {
+    bottom: 0px;
+}

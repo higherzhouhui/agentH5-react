@@ -1,0 +1,618 @@
+$baseHeiColor: rgba(0, 0, 0, 0.45);
+$bgColor: #ECEFF7;
+$primaryColor: #FC708B;
+$font12: .75rem;
+$font14: .875rem;
+$font16: 1rem;
+$font18: 1.125rem;
+
+.proxyIndex {
+    // padding: .75rem;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $bgColor;
+    margin-top: 2.8rem;
+    color: #000;
+    // transform: useEffecttranslate3d(0, 0, 0);
+
+    &.proxyIndex2 {
+        height: calc(100vh - 2.8rem);
+        .txt{
+            margin-top: .5rem;
+            font-size: $font12;
+            color: rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .bthGroup {
+        text-align: center;
+
+        .btn {
+            margin-top: 1.5rem;
+            display: inline-block;
+            background-color: $primaryColor;
+            border-radius: .5rem;
+            width: 13.25rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            font-size: $font14;
+            color: #fff;
+        }
+    }
+}
+
+.createForm {
+    transform: translateY(.5rem);
+    background-color: #fff;
+    width: 100%;
+    padding: .25rem 1.25rem 2rem;
+    box-sizing: border-box;
+
+    .createFormItem {
+        padding: .875rem 0 .25rem;
+        font-size: $font14;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        .key {}
+
+        .val {
+            position: relative;
+            margin-top: 1.1rem;
+            color: rgba(0, 0, 0, 0.45);
+        }
+    }
+
+    .eye {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+    }
+
+}
+
+
+
+.body {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $bgColor;
+    min-height: 100vh;
+    height: 100%;
+    color: #000;
+
+    .topStyles {
+        padding: 0 2rem;
+        background-color: #fff;
+        line-height: 2.8rem;
+        display: flex;
+        justify-content: space-around;
+
+        .topItemStyle {
+            position: relative;
+            text-align: center;
+            font-size: $font18;
+            color: rgba(0, 0, 0, 0.45);
+
+            &.active {
+                color: $primaryColor;
+
+                // border-bottom: 2px solid ;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 1.25rem;
+                    height: 3px;
+                    border-radius: 3px;
+                    background-color: $primaryColor;
+                    bottom: 0;
+                    left: calc(50% - 0.625rem);
+                }
+            }
+        }
+
+    }
+
+    .toFixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.commonHeader {
+    width: 100%;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.125rem;
+    color: #000;
+
+    .icon {
+        position: absolute;
+        top: .75rem;
+        left: .75rem;
+        width: 1.25rem;
+    }
+
+}
+
+.rightSearchBox {
+    position: absolute;
+    right: 1rem;
+    width: 2rem;
+    top: 2.6rem;
+    text-align: right;
+    transition: 0.2s all;
+    box-sizing: border-box;
+    height: 2.8rem;
+    background-color: #fff;
+
+    &.show {
+        text-align: left;
+        right: unset;
+        width: 100%;
+
+        .input {
+            width: 70%;
+            padding: 0 .7rem 0 2rem;
+        }
+
+        .searchIcon {
+            display: none;
+        }
+
+        .inputSeachIcon {
+            display: block;
+        }
+
+        .searchInputBox {
+            padding-top: .5rem;
+            display: flex;
+            align-items: center;
+
+            .txt {
+                margin-left: .7rem;
+                white-space: nowrap;
+                font-size: $font14;
+            }
+        }
+    }
+
+    .inputSeachIcon {
+        position: absolute;
+        left: 1.5rem;
+        height: 1rem;
+        display: none;
+        top: 1rem;
+    }
+
+    .input {
+        width: 0;
+        margin-left: 1rem;
+        padding: 0;
+        height: 2rem;
+        line-height: 2rem;
+        background-color: $bgColor;
+        border-radius: 4px;
+        font-size: $font12;
+    }
+
+    .searchIcon {
+        position: absolute;
+        height: 1rem;
+        margin-top: 1.2rem;
+        right: 0rem;
+    }
+}
+
+.addProxyIcon {
+    position: fixed;
+    bottom: 81px;
+    right: 12px;
+    font-size: 1.5rem;
+    color: var(--adm-color-primary);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 10;
+    padding: 0.8rem;
+    // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.searchBox {
+    display: flex;
+    overflow: hidden;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    background-color: #fff;
+    padding: 0 .75rem;
+    box-sizing: border-box;
+
+    .searchInput {
+        position: relative;
+        margin-top: .75rem;
+        padding: 0 .7rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        background-color: $bgColor;
+        border-radius: 4px;
+        font-size: $font12;
+        margin-right: .5rem;
+        width: 6.875rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:last-child {
+            width: 13rem;
+            padding-right: 1rem;
+        }
+
+        .moudleColor {
+            color: $baseHeiColor;
+        }
+
+        .icon,
+        img {
+            position: absolute;
+            width: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            right: .4rem;
+        }
+    }
+}
+
+.scrollBox {
+
+    position: absolute;
+    top: 5.6rem;
+    width: 100%;
+    padding-bottom: 49px;
+    min-height: calc(100vh - 5.6rem);
+    box-sizing: border-box;
+    // overflow-y: auto;
+
+    .noData {
+        padding-top: 2rem;
+        text-align: center;
+        color: $baseHeiColor;
+        font-size: $font16;
+    }
+
+    &.scrollBox3 {
+        padding: .5rem .75rem 2.5rem;
+        background-color: $bgColor;
+    }
+}
+
+.scrollBox2 {
+    position: absolute;
+    padding: .5rem .75rem;
+    // top: 5.6rem;
+    width: 100%;
+    padding-bottom: 49px;
+    // min-height: calc(100vh - 5.6rem);
+    box-sizing: border-box;
+    background-color: $bgColor;
+
+    .noData {
+        padding-top: 2rem;
+        text-align: center;
+        color: $baseHeiColor;
+        font-size: $font16;
+    }
+}
+
+.item {
+    margin-bottom: .5rem;
+    padding: .5rem .5rem .75rem;
+    border-radius: .5rem;
+    background-color: #fff;
+
+    .topStyle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .leftInfo {
+            display: flex;
+            align-items: center;
+            .avatar{
+                margin-right: 0.625rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .head {
+                margin-right: 0.625rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                border-radius: 50%;
+                background: #AFAFEE;
+                color: #fff;
+                &.head1{
+                    background: #95E5D2;
+                }
+                &.head2{
+                    background: #C9D565;
+                }
+                &.head3{
+                    background: #D1D1D1;
+                }
+                &.head4{
+                    background: #FABFCB;
+                }
+            }
+
+            .UserInfo {
+                .name {
+                    font-size: $font14;
+                    color: rgba(0, 0, 0, 0.88);
+            font-family: ArialBold;
+                }
+
+                .id {
+                    margin-top: 4px;
+                    font-size: $font12;
+                    color: rgba(0, 0, 0, 0.45);
+                }
+            }
+        }
+
+        .rightInfo {
+            text-align: right;
+
+            .time {
+                margin-top: 4px;
+                font-size: $font12;
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            .status {
+                display: inline-block;
+                padding: .2rem .4rem;
+                font-size: $font12;
+                background-color: rgba(236, 157, 81, .2);
+                color: #EC9D51;
+
+                &.status1 {
+                    background-color: rgba(21, 207, 102, .2);
+                    color: #15CF66;
+                    border-radius: 4px;
+
+                }
+            }
+        }
+    }
+
+    .bottomStyle {
+        margin-top: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .bottomStyleItem {
+            padding: 0 1rem;
+            text-align: center;
+
+            .key {
+                line-height: 2rem;
+                font-size: $font16;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-family: DinNumber;
+            }
+
+            .val {
+                font-size: $font12;
+                color: rgba(0, 0, 0, 0.45);
+            }
+        }
+    }
+}
+
+
+
+.proxyDetial {
+    padding: .5rem .75rem;
+
+    .itemDetail {
+        margin-bottom: .5rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        background-color: #fff;
+
+        .topStyle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .leftInfo {
+                display: flex;
+                align-items: center;
+                .avatar{
+                    margin-right: 0.625rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .head {
+                    margin-right: 0.625rem;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #AFAFEE;
+                    color: #fff;
+                    &.head1{
+                        background: #95E5D2;
+                    }
+                    &.head2{
+                        background: #C9D565;
+                    }
+                    &.head3{
+                        background: #D1D1D1;
+                    }
+                    &.head4{
+                        background: #FABFCB;
+                    }
+                }
+
+                .UserInfo {
+                    .name {
+                        font-size: $font14;
+                        color: rgba(0, 0, 0, 0.88);
+                        font-family: ArialBold;
+                    }
+
+                    .id {
+                        margin-top: 8px;
+                        font-size: $font12;
+                        color: rgba(0, 0, 0, 0.45);
+                    }
+                }
+            }
+
+            .rightInfo {
+                text-align: right;
+
+                .time {
+                    margin-top: 4px;
+                    font-size: $font12;
+                    color: rgba(0, 0, 0, 0.25);
+                }
+
+                .status {
+                    display: inline-block;
+                    padding: .2rem .4rem;
+                    font-size: $font12;
+                    background-color: rgba(236, 157, 81, .2);
+                    color: #EC9D51;
+
+                    &.status1 {
+                        background-color: rgba(21, 207, 102, .2);
+                        color: #15CF66;
+                        border-radius: 4px;
+
+                    }
+                }
+            }
+        }
+
+        .bottomStyle {
+            margin-top: .5rem;
+            // padding: 0 2rem;
+            display: flex;
+            // align-items: center;
+            justify-content: space-around;
+
+            .bottomStyleItem {
+                padding: 0 1rem;
+                margin-bottom: .5rem;
+                text-align: center;
+                flex: 1;
+
+                .key {
+                    line-height: 2rem;
+                    font-size: $font16;
+                    color: rgba(0, 0, 0, 0.88);
+                    font-weight: 500;
+                    font-family: DinNumber;
+                    &.lose {
+                        color: #15CF66;
+                    }
+
+                    &.win {
+                        color: #F94242;
+
+                    }
+                }
+
+                .val {
+                    font-size: $font12;
+                    color: rgba(0, 0, 0, 0.45);
+                    // white-space: nowrap;
+                }
+            }
+        }
+
+        .centerStyle {
+            .centerStyleItem {
+                margin-top: .25rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: $font14;
+
+                .key {}
+
+                .val {
+                    color: rgba(0, 0, 0, 0.45);
+                }
+
+                &:last-child {
+                    margin-top: 1.5rem;
+                    margin-bottom: .25rem;
+                }
+            }
+        }
+
+    }
+
+    .itemOterBox {
+        padding: .5rem 0;
+        background-color: #fff;
+        border-radius: .5rem;
+
+        .itemDetailTitle {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.45);
+            font-weight: 600;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        }
+    }
+
+    .proxyDetialDec {
+        margin: 1.25rem 0 1rem;
+        display: flex;
+        align-items: center;
+        font-size: $font16;
+
+        img {
+            margin-right: 0.25rem;
+            height: 16px;
+        }
+    }
+
+    .proxyDetailCheckTitle {
+        display: flex;
+        width: 100%;
+        height: 2.125rem;
+        line-height: 2.125rem;
+        text-align: center;
+        border-radius: 7px;
+        background-color: #fff;
+
+        &Item {
+            width: 50%;
+            text-align: center;
+
+            &.active {
+                background-color: $primaryColor;
+                color: #fff;
+                border-radius: 7px;
+            }
+        }
+    }
+}

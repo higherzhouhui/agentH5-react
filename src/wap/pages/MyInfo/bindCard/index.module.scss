@@ -1,0 +1,74 @@
+.container {
+	position: relative;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 44px 0 65px 0;
+	background: #eceff7;
+	.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 44px;
+		color: #000;
+		font-family: ArialBold;
+		font-size: 1rem;
+		background: #fff;
+		.backBtn {
+			position: fixed;
+			width: 20px;
+			height: 20px;
+			left: 12px;
+			top: 12px;
+		}
+	}
+	.tabList {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 12px;
+		width: 100%;
+		background: #fff;
+		padding: 4px 12px;
+		box-sizing: border-box;
+		border-top: 1px solid #ECEFF7;
+		.tab {
+			width: 100%;
+			text-align: center;
+			line-height: 36px;
+			border-radius: 18px;
+			background: #ECEFF7;
+			font-size: 0.9rem;
+			color: rgba(0,0,0,0.45);
+		}
+		.tabActive {
+			color: #fff;
+			background: var(--adm-color-primary);
+		}
+	}
+	.main {
+		padding: 8px 12px 65px 12px;
+	}
+	.addNew {
+		width: 100%;
+		height: 50px;
+		background: #FFFFFF;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		font-size: 0.9rem;
+		font-weight: 400;
+		color: var(--adm-color-primary);
+		padding: 0 8px;
+		box-sizing: border-box;
+		margin-top: 8px;
+		img {
+			width: 15px;
+			height: 15px;
+			margin: -3px 8px 0 0;
+		}
+	}
+}

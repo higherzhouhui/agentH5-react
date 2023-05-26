@@ -1,0 +1,44 @@
+$bgColor: #ECEFF7;
+$font18: 1.125rem;
+
+.adm-tabs-content {
+    background-color: $bgColor;
+
+}
+
+.infinite-scroll-component__outerdiv {
+    // padding: .5rem .75rem;
+    background-color: $bgColor;
+
+}
+
+.adm-input {
+    width: 92%;
+}
+
+.adm-tabs-tab-wrapper {
+    height: 2.8rem;
+    line-height: 2.8rem;
+
+    .adm-tabs-tab {
+        padding: 0;
+        font-size: $font18;
+        color: var(--adm-color-primary);
+    }
+
+}
+
+.adm-tabs-header {
+    border-bottom: unset;
+}
+
+.adm-tabs-tab-line {
+    // width: 2rem !important;
+    // left: calc(20% - 1rem);
+
+    background-color: var(--adm-color-primary);
+}
+
+.adm-list-body {
+    background-color: #ECEFF7;
+}

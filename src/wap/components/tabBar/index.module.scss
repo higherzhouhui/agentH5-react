@@ -1,0 +1,15 @@
+.tabIcon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 15px;
+}
+
+.tabBox {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 2px 2px #eee;
+    background: #fff;
+    z-index: 9;
+}
